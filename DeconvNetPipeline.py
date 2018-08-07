@@ -293,7 +293,7 @@ if __name__ == '__main__':
     logits=deconvnet.logits
 
     cross_entropy=tf.nn.sparse_softmax_cross_entropy_with_logits(labels=tf.cast(tf.reshape(deconvnet.y, [-1]), tf.int64), logits=logits,
-        , name='x_entropy')
+         name='x_entropy')
     
     loss_mean=tf.reduce_mean(cross_entropy, name='x_entropy_mean')
 
