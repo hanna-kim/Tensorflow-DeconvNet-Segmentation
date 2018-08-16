@@ -87,7 +87,7 @@ class DeconvNet:
         if use_cpu:
             device = '/cpu:0'
         else:
-            device = '/gpu:1'
+            device = '/gpu:0'
 
         with tf.device(device):
 
